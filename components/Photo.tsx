@@ -13,9 +13,9 @@ import Image from 'next/image'
 const Photo: React.FC = () => {
   return (
     <div className='w-full h-full relative'>
-      <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1, transition: { delay: 2, duration: 0.4, ease: "easeIn" } }}>
+      <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1, transition: { delay: 1, duration: 0.4, ease: "easeIn" } }}>
         <motion.div
-          initial={{ opacity: 0 }} animate={{ opacity: 1, transition: { delay: 2.4, duration: 0.4, ease: "easeInOut" } }}
+          initial={{ opacity: 0 }} animate={{ opacity: 1, transition: { delay: 1, duration: 0.4, ease: "easeInOut" } }}
           className='w-[300px] h-[300px] xl:w-[500px] xl:h-[500px] mix-blend-lighten flex 
           items-center justify-center rounded-full bg-gradient-to-br from-accent to-primary absolute top-0 left-0 right-0 bottom-0 m-auto mt-6'
         >
