@@ -1,8 +1,26 @@
+"use client"
+
 import Photo from "@/components/Photo";
 import Social from "@/components/Social";
 import Stats from "@/components/Stats";
 import { Button } from "@/components/ui/button";
 import { FiDownload } from "react-icons/fi";
+
+function downloadCV() {
+  //Baixar o currículo para o computador do usuário
+  fetch('/assets/curriculo.pdf').then((response) => {
+    response.blob().then((blob) => {
+      const url = window.URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      a.href = url;
+      a.download = 'Janderson Vilas Boas - CV.pdf';
+      a.click();
+
+      window.URL.revokeObjectURL(url);
+    }
+    )
+  })
+}
 
 const Home: React.FC = () => {
   return (
@@ -16,7 +34,9 @@ const Home: React.FC = () => {
               Formado em engenharia da computação pelo INATEL, com experiência em desenvolvimento de software, principalmente em aplicações web e mobile.
             </p>
             <div className="flex flex-col xl:flex-row items-center gap-8">
-              <Button variant="outline" size="lg" className="uppercase flex items-center gap-2">
+              <Button variant="outline" size="lg" className="uppercase flex items-center gap-2"
+                onClick={downloadCV}
+              >
                 <span>Download CV</span>
                 <FiDownload className="text-xl" />
               </Button>

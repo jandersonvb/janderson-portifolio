@@ -7,19 +7,19 @@ import Link from "next/link"
 const services = [
   {
     num: "01",
-    title: "Desenvolvedor Web",
+    title: "Web",
     description: "Desenvolvimento de sites e sistemas web",
     href: ""
   },
   {
     num: "02",
-    title: "Desenvolvedor Mobile",
+    title: "Mobile",
     description: "Desenvolvimento de aplicativos mobile",
     href: ""
   },
   {
     num: "03",
-    title: "Desenvolvedor Backend",
+    title: "Backend",
     description: "Desenvolvimento de APIs e sistemas web",
     href: ""
   }
@@ -35,7 +35,7 @@ const Services: React.FC = () => {
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1, transition: { delay: 1, duration: 0.4, ease: "easeIn" }, }}
-          className="grid grid-cols-1 md:grid-cols-2 gap-[60px] mt-40"
+          className="grid grid-cols-1 md:grid-cols-2 gap-[60px]"
         >
           {services.map((service, index) => {
             return (
