@@ -1,14 +1,9 @@
 "use client"
 
-import { useState } from "react"
-import { Button } from "@/components/ui/button"
-import { Input } from "@/components/ui/input"
-import { Textarea } from "@/components/ui/textarea"
-import { Select, SelectContent, SelectGroup, SelectItem, SelectLabel, SelectTrigger, SelectValue } from "@/components/ui/select"
-import { FaPhoneAlt, FaEnvelope, FaMapMarkedAlt } from "react-icons/fa"
+import Photo from "@/components/Photo"
 import { motion } from "framer-motion"
 import Link from "next/link"
-import Photo from "@/components/Photo"
+import { FaEnvelope, FaMapMarkedAlt, FaPhoneAlt } from "react-icons/fa"
 
 const infos = [
   {
@@ -25,13 +20,13 @@ const infos = [
     description: "jandersonvb.dev@gmail.com",
     path: "mailto:jandersonvb.dev@gmail.com",
   },
-  {
-    icon: <FaMapMarkedAlt />,
-    title: "Endereço",
-    description: "Avenida padra lourenço da costa, 3415, Itajubá - MG",
-    path: "https://www.google.com/maps?q=Av.+Padre+Lourenço+da+Costa-Rodovia+Br-459,+3415,+Itajubá+-+MG",
+  // {
+  //   icon: <FaMapMarkedAlt />,
+  //   title: "Endereço",
+  //   description: "Avenida padre lourenço da costa, 3415, Itajubá - MG",
+  //   path: "https://www.google.com/maps?q=Av.+Padre+Lourenço+da+Costa-Rodovia+Br-459,+3415,+Itajubá+-+MG",
 
-  }
+  // }
 ]
 
 const Contact: React.FC = () => {

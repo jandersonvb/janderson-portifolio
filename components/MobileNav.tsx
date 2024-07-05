@@ -12,17 +12,17 @@ const links = [
     path: "/"
   },
   {
-    name: "serviços",
+    name: "áreas de atuação",
     path: "/services"
   },
   {
     name: "sobre",
     path: "/about"
   },
-  {
-    name: "trabalhos",
-    path: "/work"
-  },
+  // {
+  //   name: "trabalhos",
+  //   path: "/work"
+  // },
   {
     name: "contato",
     path: "/contact"
