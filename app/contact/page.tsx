@@ -46,10 +46,10 @@ const Contact: React.FC = () => {
               <div className="grid grid-cols-1 gap-6">
                 <div>
                   <h2 className="text-2xl font-bold">Informações de contato</h2>
-                  <p className="text-white/60">Entre em contato comigo através dos meios abaixo.</p>
+                  <p className="text-white/60 mb-9">Entre em contato comigo através dos meios abaixo.</p>
                   <div className="flex flex-col gap-4">
                     {infos.map((item, index) => (
-                      <div key={index} className="flex gap-4 items-center">
+                      <div key={index} className="gap-4">
                         <Link href={item.path} className="w-9 h-9 border border-accent rounded-full flex justify-center items-center text-accent text-base hover:bg-accent hover:text-primary hover:transition-all duration-500" target='_blank'>
                           {item.icon}
                         </Link>
