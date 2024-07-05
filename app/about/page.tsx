@@ -15,14 +15,7 @@ const about = {
   title: "Sobre",
   description: "Olá, eu sou o Janderson, 34 anos, sou graduado em Engenharia da computação pelo INATEL e trabalho com desenvolvimento de software desde 2021. Atualmente sou desenvolvedor fullstack na minha empresa VBTech , onde trabalho com tecnologias como React, Node.js, Nest.js, Next.js, TailwindCSS, Figma, entre outras. Sou apaixonado por tecnologia e sempre estou estudando e aprendendo novas tecnologias.",
   info: [
-    {
-      fieldName: "Name",
-      fieldValue: "Janderson Pizzially Vilas Boas"
-    },
-    {
-      fieldName: "Telefone",
-      fieldValue: "(35) 99810-2070"
-    },
+
     {
       fieldName: "Experiência",
       fieldValue: "3 anos"
@@ -31,10 +24,7 @@ const about = {
       fieldName: "Nacionalidade",
       fieldValue: "Brasileiro"
     },
-    {
-      fieldName: "Email",
-      fieldValue: "jandersonvb.dev@gmail.com"
-    },
+
     {
       fieldName: "Línguas",
       fieldValue: "Português, Inglês e Espanhol"
@@ -229,18 +219,8 @@ const About: React.FC = () => {
                     )
                   })}
                 </ul>
-                {/* Botão do WhatsApp */}
 
               </div>
-              <div className="mt-4">
-                <a
-                  href="https://wa.me/5535998102070"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center px-4 py-2 mt-4 text-white bg-accent rounded hover:bg-accent-hover transition-colors"
-                >
-                  Fale comigo no WhatsApp
-                </a></div>
 
             </TabsContent>
           </div>

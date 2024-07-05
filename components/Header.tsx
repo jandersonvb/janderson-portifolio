@@ -1,8 +1,7 @@
 import Link from "next/link";
+import MobileNav from "./MobileNav";
 import Nav from "./Nav";
 import { Button } from "./ui/button";
-import Image from "next/image";
-import MobileNav from "./MobileNav";
 
 const Header: React.FC = () => {
   return (
@@ -20,11 +19,15 @@ const Header: React.FC = () => {
         {/* Desktop nav  */}
         <div className="hidden xl:flex items-center gap-8">
           <Nav />
-          <Link href="/contact">
+          <Link
+            href="https://wa.me/5535998102070"
+            target="_blank"
+            rel="noopener noreferrer">
             <Button
               className="bg-accent hover:bg-accent-hover transition-colors duration-300 ease-in-out"
             >Contrate-me</Button>
           </Link>
+
         </div>
 
         {/* Mobile nav */}

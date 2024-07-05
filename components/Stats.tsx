@@ -16,8 +16,8 @@ const stats = [
     text: "Skill de tecnologia"
   },
   {
-    num: 50,
-    text: "Commit no GitHub"
+    num: 390,
+    text: "Commits no GitHub"
   }
 ]
 
