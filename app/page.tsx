@@ -29,7 +29,7 @@ const Home: React.FC = () => {
         <div className="flex flex-col xl:flex-row items-center justify-between">
           <div className="text-center xl:text-left order-2 xl:order-none">
             <span className="text-xl">Software Developer</span>
-            <h1 className="h1 mb-6 "> <br /> <span className="text-accent">Janderson Vilas Boas</span></h1>
+            <h1 className="h1 mb-6 "> <br /> <span className="text-accent">Janderson Pizzially Vilas Boas</span></h1>
             <p className="max-w-[500px] mb-6 text-white/80">
               Formado em engenharia da computação pelo INATEL, com experiência em desenvolvimento de software, principalmente em aplicações web e mobile.
             </p>
